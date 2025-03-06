@@ -206,72 +206,83 @@
             color: #2e63c9;
         }
 
-
-        /*  responsive rules */
-
-        @media only screen and (min-width: 401px) and (max-width: 800px) {
-
-            nav a, article p, .hoss{
-                display: none;
-            }
-
-            main{
-                padding: 0 10px;
-            }
-
-            header {
-                height: 350px;
-              
-            }
-
-            body{
-                font-size: 20px;
-            }
-
-            h1{
-                font-size: 1.75em;
-                max-width: 100%;
-                margin-top: 0;
-            }
-
-            h2, article h2{
-                font-size: 1em;
-            }
-
-            label, .p90, .p50, .p40{
-            width: 100%;
-            }
-
-            label{
-                text-align: left;
-            }
-
+    /* Tablet styles */
+    @media only screen and (min-width: 401px) and (max-width: 800px) {
+        nav a, article p, .hoss {
+            display: none;
         }
-		@media only screen and (max-width: 400px) {
-			
-			header {
-				background: url("img/mobile-header.jpg") no-repeat right bottom; /*add mobile-header here*/
-			}	
-			
-			
-			@media only screen and (max-width: 320px) {
-				
-			}
-			
-				header {
-				background: url("img/mobile-header.jpg") no-repeat right bottom; /*add mobile-header here*/
-			}	
-			
-			
-			
-			
-			
-		}
-			
-			
-			
-			
-			
+        
+        main {
+            padding: 0 10px;
+        }
+        
+        header {
+            height: 350px;
+        }
+        
+        body {
+            font-size: 20px;
+        }
+        
+        h1 {
+            font-size: 1.75em;
+            max-width: 100%;
+            margin-top: 0;
+        }
+        
+        h2, article h2 {
+            font-size: 1em;
+        }
+        
+        label, .p90, .p50, .p40 {
+            width: 100%;
+        }
+        
+        label {
+            text-align: left;
+        }
+    }
+
+    /* Mobile styles */
+    @media only screen and (max-width: 400px) {
+        header {
+            background: url("img/mobile-header.jpg") no-repeat right bottom;
+            background-size: contain; /* This helps ensure the image fits properly */
+        }
+        
+        nav a, article p, .hoss {
+            display: none;
+        }
+        
+        main {
+            padding: 0 10px;
+        }
+        
+        body {
+            font-size: 18px;
+        }
+        
+        h1 {
+            font-size: 1.5em;
+            max-width: 100%;
+            margin: 0.5em;
+        }
+        
+        article {
+            column-count: 1;
+        }
+        
+        label, .p90, .p50, .p40, .p70, .p20 {
+            width: 100%;
+            display: block;
+        }
+        
+        form table {
+            text-align: left;
+        }
+    }
+                
+                
 			
     </style>
 </head>
