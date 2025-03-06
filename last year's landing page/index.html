@@ -1,0 +1,475 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width", initial-scale="1"/>
+    <title>Win a trip to the Cuddliest Place on Earth!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;300;500;700&display=swap"
+        rel="stylesheet">
+
+
+
+    <style>
+        /*   LAYOUT STYLES   */
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto Flex', sans-serif;
+            background: url(img/wave.svg) no-repeat center top;
+            background-size: 100% 375px;
+        }
+
+        header {
+            background: url(img/animals.png) no-repeat right bottom; /*add mobile-header here*/
+            height: 445px;
+            margin: auto;
+            max-width: 1000px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        footer {
+            color: #666;
+            font-size: .8em;
+            line-height: 2em;
+            padding: 2em 0;
+            font-weight: 300;
+        }
+
+        table img {
+            max-width: 100%;
+        }
+
+        nav img {
+            float: left;
+        }
+
+        nav {
+            text-align: right;
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 1em;
+            line-height: 64px;
+            font-weight: 700;
+            letter-spacing: .2em;
+            font-size: 1.1em;
+        }
+
+        article {
+            column-count: 3;
+            column-gap: 2em;
+            text-align: center;
+            margin-top: 3em;
+        }
+
+        article img {
+            width: 40px;
+        }
+
+        article div {
+            break-inside: avoid;
+        }
+
+        /*   FORM STYLES   */
+
+        form {
+            background-color: #d6c9f6;
+            padding: .5em;
+            margin: 2em 0;
+            border-radius: 10px;
+        }
+
+        form h2 {
+            color: #8045d2;
+            background: none;
+            padding: 0;
+            margin-bottom: .66em;
+        }
+
+        form table {
+            width: 100%;
+            text-align: right;
+        }
+
+        input, select {
+            margin-left: 1%;
+            line-height: 1.75em;
+            margin-bottom: 10px;
+        }
+
+        input.pill {
+            background-color: #378fff;
+            color: #fff
+        }
+
+        label {
+            width: 10%;
+            display: inline;
+            text-transform: uppercase;
+            
+        }
+
+        .p40 {
+            width: 39%;
+        }
+
+        .p50 {
+            width: 49%;
+        }
+
+        .p90 {
+            width: 89%;
+        }
+		.p20 {
+			width: 19%
+		}
+		.p70 {
+			width: 69%
+		}
+
+
+        /*   TEXT STYLES   */
+
+        h1 {
+            color: #fff;
+            font-size: 2.5em;
+            line-height: 1.1em;
+            margin: 1em;
+            max-width: 40%;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #2e63c9;
+            margin: 2em 0 1em 0;
+            background: rgba(255, 255, 255, 1);
+        }
+
+        header h2 {
+            margin: 0 0 0 2em;
+        }
+
+        h2, article h2 {
+            text-transform: uppercase;
+            font-size: 1em;
+            margin: .75em;
+        }
+
+        .pill {
+            border-radius: 50px;
+            padding: .5em 2em;
+            text-transform: uppercase;
+            display: inline-block;
+            border: none;
+        }
+
+        table h2 {
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            font-size: 1.2em;
+            margin-bottom: .5em;
+        }
+
+        h3 {
+            margin-top: 1em;
+        }
+
+        p {
+            color: #666;
+        }
+
+        #prizes p {
+            padding: 1em;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2e63c9;
+        }
+
+
+        /*  responsive rules */
+
+        @media only screen and (min-width: 401px) and (max-width: 800px) {
+
+            nav a, article p, .hoss{
+                display: none;
+            }
+
+            main{
+                padding: 0 10px;
+            }
+
+            header {
+                height: 350px;
+              
+            }
+
+            body{
+                font-size: 20px;
+            }
+
+            h1{
+                font-size: 1.75em;
+                max-width: 100%;
+                margin-top: 0;
+            }
+
+            h2, article h2{
+                font-size: 1em;
+            }
+
+            label, .p90, .p50, .p40{
+            width: 100%;
+            }
+
+            label{
+                text-align: left;
+            }
+
+        }
+		@media only screen and (max-width: 400px) {
+			
+			header {
+				background: url("img/mobile-header.jpg") no-repeat right bottom; /*add mobile-header here*/
+			}	
+			
+			
+			@media only screen and (max-width: 320px) {
+				
+			}
+			
+				header {
+				background: url("img/mobile-header.jpg") no-repeat right bottom; /*add mobile-header here*/
+			}	
+			
+			
+			
+			
+			
+		}
+			
+			
+			
+			
+			
+			
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav> <img src="img/QV-logo.svg" alt="Quantas Vacations" width="350" />
+            <a href="#prizes"> Prize Details</a>
+            <a href="#rules"> Official Rules</a>
+        </nav>
+
+        <h1>Win a $15,000 trip to the cuddliest place Earth!</h1>
+        <h2 class="pill"><a href="#entryform">Enter Now!</a></h2>
+    </header>
+    <main>
+
+
+
+        <article>
+
+            <div>
+                <img src="img/Icon---Plane.jpg" alt="" />
+                <h2>Free Flight</h2>
+                <p>Business Class from Los&nbsp;Angeles to Sydney</p>
+            </div>
+
+
+            <div>
+                <img src="img/Icon-bed.jpg" alt="" />
+                <h2>Free Hotel</h2>
+                <p>4 nights at the 5-Star Sydney Hilton with view of the Opera&nbsp;House</p>
+            </div>
+
+            <div>
+                <img src="img/Icon-Camera.jpg" alt="" />
+                <h2>Free Tours</h2>
+                <p>City tour, Harbor tour, Sydney&nbsp;Zoo, and Koala&nbsp;Rescue&nbsp;Centre</p>
+            </div>
+
+        </article>
+
+        <form id="entryform" action="custom.php" method="post">
+            <!-- this PHP file is a non-functional placeholder only to illustrate how to connect a form to the data-processing script-->
+            <h2>Enter for your chance to win a FREE trip to Sydney Australia!</h2>
+            <table border="0" cellpadding="0" cellspacing="10">
+
+                <tr>
+                    <td><label>Name</label><input type="text" name="name" placeholder="(required)" required
+                            class="p90" /></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><label>Address</label><input type="text" name="address" class="p90" /></td>
+
+                </tr>
+
+                <tr>
+                    <td><label>City</label><input type="text" name="city" class="p70" />
+                    <select name="state" class="p20">
+                        <option value="null">State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td><label>Email</label><input type="text" name="email" class="p40" />
+					
+            
+                 <label>Phone</label><input type="tel" name="phone" class="p40" /></td>
+
+                </tr>
+
+
+
+                <tr>
+                    <td style="text-align: left;"><label style="width:auto;margin: left 11%; ;">I agree to the offical
+                            rules</label>
+                        <input type="checkbox" name="agree" />
+                        <input type="submit" value="ENTER" class="pill p40" style="float: right;" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <h2>One Grand Prize Winner will receive:</h2>
+
+        <table cellpadding="0" cellspacing="0" id="prizes">
+            <tr>
+                <td width="30%"><img src="img/business-class.jpg" alt="business class flight" /></td>
+
+                <td colspan="2">
+                    <p>You and a guest will fly from Los Angeles International Airport in opulent comfort in Qantas
+                        Business Class. Arrive rested and refreshed at Sydney International Airport, with free transfer
+                        to your hotel... </p>
+                </td>
+
+            </tr>
+
+
+            <tr>
+                <td colspan="2">
+                    <p>Get express VIP check-in for four nights at the five-star Four Seasons hotel near Sydney Harbor.
+                        Your Harbor-view King Suite includes free Wi-Fi and a free welcome drink...</p>
+                </td>
+
+                <td width="30%"><img src="img/hotel.jpg" alt="5-star hotel" /></td>
+
+            </tr>
+
+
+            <tr>
+
+                <td width="30%"><img src="img/zoo.jpg" alt="Syndey Zoo tour" /></td>
+
+                <td colspan="2">
+                    <p>Explore Australia’s most vibrant city with a free city tour, free harbor cruise, and free
+                        entrance to the Sydney Zoo, and the Western Sydney Koala Rehabilitation Centre.</p>
+                </td>
+
+            </tr>
+        </table>
+
+        <h2 class="hoss"><a href="https://quantasvacations.com">See where Qantas Vacations can take you today! &#10140;</a></h2>
+
+        <img class="hoss" src="img/Qantas_A380.jpg" alt="Qantas jet over Sydney Harboour" style="max-width: 100%;" />
+
+        <footer id="rules">
+            <h4>OFFICIAL RULES</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+                in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+                vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+                dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse molestie consequat, vel illum dolore eu feugiat nulla </p>
+        </footer>
+    </main>
+</body>
+
+</html>
