@@ -207,7 +207,7 @@
         }
 
     /* Tablet styles */
-    @media only screen and (min-width: 401px) and (max-width: 800px) {
+    @media only screen and (min-width: 501px) and (max-width: 800px) {
         nav a, article p, .hoss {
             display: none;
         }
@@ -218,8 +218,15 @@
         
         header {
             height: 350px;
+            background-size: contain;
+            background-position: right bottom;
         }
         
+
+        nav img {
+            max-width: 40%; /* Make the logo smaller on tablet */
+        }
+
         body {
             font-size: 20px;
         }
@@ -244,14 +251,32 @@
     }
 
     /* Mobile styles */
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 500px) {
+        body {
+            /* Adjust the wave background to be taller in mobile view */
+            background-size: 100% 450px;
+        }
+
         header {
             background: url("img/mobile-header.jpg") no-repeat right bottom;
-            background-size: contain; /* This helps ensure the image fits properly */
+            background-size: 100% auto; /* Width 100%, height auto to maintain aspect ratio */
+            background-position: right bottom;
+            height: 500px;
         }
         
         nav a, article p, .hoss {
             display: none;
+        }
+
+        nav img {
+            max-width: 100%;
+            float: none; /* Remove float to prevent collision with heading */
+            display: block; /* Make it a block element */
+            margin-bottom: 10px; /* Add space below logo */
+        }
+
+        nav {
+            text-align: center; /* Center the logo */
         }
         
         main {
@@ -266,6 +291,8 @@
             font-size: 1.5em;
             max-width: 100%;
             margin: 0.5em;
+            clear: both; /* Ensure heading appears below logo */
+            margin-top: 20px;
         }
         
         article {
@@ -281,6 +308,7 @@
             text-align: left;
         }
     }
+              
                 
                 
 			
