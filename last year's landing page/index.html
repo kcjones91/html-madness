@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width", initial-scale="1"/>
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
     <title>Win a trip to the Cuddliest Place on Earth!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,12 +26,12 @@
 
         body {
             font-family: 'Roboto Flex', sans-serif;
-            background: url(img/wave.svg) no-repeat center top;
+          	background: url("img/wave.svg") no-repeat center top;
             background-size: 100% 375px;
         }
 
         header {
-            background: url(img/animals.png) no-repeat right bottom; /*add mobile-header here*/
+           background: url("img/animals.png") no-repeat right bottom;
             height: 445px;
             margin: auto;
             max-width: 1000px;
@@ -206,10 +206,15 @@
             color: #2e63c9;
         }
 
-    /* Tablet styles */
-    @media only screen and (min-width: 501px) and (max-width: 800px) {
-        nav a, article p, .hoss {
-            display: none;
+		/* Tablet styles */
+        @media only screen and (min-width: 501px) and (max-width: 800px) {
+
+        nav a {
+            font-size: 0.8em; /* Smaller font size */
+            margin: 0.4em; /* Reduced margins */
+            letter-spacing: 0.1em; /* Reduced letter spacing */
+            line-height: 40px; /* Adjust to make Qantas Vacations and links on same line */
+            vertical-align: top; /* Adjust to make Qantas Vacations and links on same line */
         }
         
         main {
@@ -218,7 +223,7 @@
         
         header {
             height: 350px;
-            background-size: contain;
+            background-size: 55% auto;
             background-position: right bottom;
         }
         
@@ -233,46 +238,41 @@
         
         h1 {
             font-size: 1.75em;
-            max-width: 100%;
+            max-width: 40%;
             margin-top: 0;
         }
         
         h2, article h2 {
             font-size: 1em;
         }
+
         
-        label, .p90, .p50, .p40 {
-            width: 100%;
-        }
-        
-        label {
-            text-align: left;
-        }
     }
 
     /* Mobile styles */
     @media only screen and (max-width: 500px) {
         body {
             /* Adjust the wave background to be taller in mobile view */
-            background-size: 100% 450px;
+            background: none; /* Rmove the wave to fix overlap */
         }
 
         header {
             background: url("img/mobile-header.jpg") no-repeat right bottom;
-            background-size: 100% auto; /* Width 100%, height auto to maintain aspect ratio */
-            background-position: right bottom;
-            height: 500px;
+            background-size: cover; /* This makes the image cover the entire area */
+            height: 500px; /* A fixed height that works well on mobile at 500px which is size of photo*/
+            margin: 0 auto;
         }
         
-        nav a, article p, .hoss {
-            display: none;
-        }
 
         nav img {
             max-width: 100%;
             float: none; /* Remove float to prevent collision with heading */
             display: block; /* Make it a block element */
             margin-bottom: 10px; /* Add space below logo */
+        }
+
+        nav a, article p, .hoss {
+            display: none;
         }
 
         nav {
@@ -307,10 +307,10 @@
         form table {
             text-align: left;
         }
-    }
-              
-                
-                
+    }			
+			
+			
+			
 			
     </style>
 </head>
@@ -318,7 +318,7 @@
 <body>
 
     <header>
-        <nav> <img src="img/QV-logo.svg" alt="Quantas Vacations" width="350" />
+         <nav> <img src="img/QV-logo.svg" alt="Quantas Vacations" width="350" />
             <a href="#prizes"> Prize Details</a>
             <a href="#rules"> Official Rules</a>
         </nav>
@@ -340,7 +340,7 @@
 
 
             <div>
-                <img src="img/Icon-bed.jpg" alt="" />
+               <img src="img/Icon-bed.jpg" alt="" />
                 <h2>Free Hotel</h2>
                 <p>4 nights at the 5-Star Sydney Hilton with view of the Opera&nbsp;House</p>
             </div>
@@ -471,14 +471,14 @@
                         Your Harbor-view King Suite includes free Wi-Fi and a free welcome drink...</p>
                 </td>
 
-                <td width="30%"><img src="img/hotel.jpg" alt="5-star hotel" /></td>
+                 <td width="30%"><img src="img/hotel.jpg" alt="5-star hotel" /></td>
 
             </tr>
 
 
             <tr>
 
-                <td width="30%"><img src="img/zoo.jpg" alt="Syndey Zoo tour" /></td>
+                 <td width="30%"><img src="img/zoo.jpg" alt="Syndey Zoo tour" /></td>
 
                 <td colspan="2">
                     <p>Explore Australia’s most vibrant city with a free city tour, free harbor cruise, and free
@@ -490,7 +490,7 @@
 
         <h2 class="hoss"><a href="https://quantasvacations.com">See where Qantas Vacations can take you today! &#10140;</a></h2>
 
-        <img class="hoss" src="img/Qantas_A380.jpg" alt="Qantas jet over Sydney Harboour" style="max-width: 100%;" />
+         <img class="hoss" src="img/Qantas_A380.jpg" alt="Qantas jet over Sydney Harboour" style="max-width: 100%;" />
 
         <footer id="rules">
             <h4>OFFICIAL RULES</h4>
